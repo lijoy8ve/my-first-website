@@ -5,50 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ossi | Kehittäjä</title>
+    <meta name="description" content="Ossin henkilökohtainen developer-portfolio.">
+
+    <title>Ossi — Developer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <a href="#" class="logo">OSSI</a>
+    <!-- NAVIGATION -->
 
-        <div class="nav-links">
-            <a href="#osaaminen">Osaaminen</a>
-            <a href="#projektit">Projektit</a>
-            <a href="#tietoa">Tietoa</a>
-        </div>
-    </nav>
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            O<span>.</span>
+        </a>
+
+        <nav>
+            <a href="#about">Minusta</a>
+            <a href="#skills">Osaaminen</a>
+            <a href="#projects">Projektit</a>
+        </nav>
+
+        <a href="#contact" class="nav-button">
+            Ota yhteyttä
+        </a>
+
+    </header>
 
 
     <main>
+
+        <!-- HERO -->
 
         <section class="hero">
 
             <div class="hero-content">
 
-                <p class="eyebrow">PYTHON • WEB • OHJELMOINTI</p>
+                <div class="status">
+                    <span></span>
+                    Rakennan ja opettelen
+                </div>
 
                 <h1>
-                    Rakennan asioita
-                    <span>verkkoon.</span>
+                    Python.
+                    <br>
+                    <span>Web.</span>
+                    <br>
+                    Ideat.
                 </h1>
 
-                <p class="hero-text">
-                    Opettelen ohjelmointia rakentamalla oikeita projekteja
-                    ja julkaisemalla niitä verkossa.
+                <p class="hero-description">
+                    Rakennan pieniä ohjelmia, verkkosivuja ja
+                    tulevaisuudessa myös oikeita tuotteita.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#projektit" class="button primary">
+
+                    <a href="#projects" class="button primary">
                         Katso projektit
                     </a>
 
-                    <a href="#tietoa" class="button secondary">
-                        Tietoa minusta
+                    <a href="#about" class="button secondary">
+                        Lue lisää
                     </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-decoration">
+
+                <div class="circle circle-one"></div>
+                <div class="circle circle-two"></div>
+
+                <div class="code-card">
+
+                    <div class="code-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <pre><code>def build():
+    idea = True
+    work = "hard"
+
+    return "something useful"</code></pre>
+
                 </div>
 
             </div>
@@ -56,93 +102,197 @@
         </section>
 
 
-        <section id="osaaminen" class="section">
+        <!-- ABOUT -->
 
-            <p class="eyebrow">OSAAMINEN</p>
+        <section id="about" class="section about">
 
-            <h2>Mitä opettelen?</h2>
+            <div class="section-label">
+                01 / MINUSTA
+            </div>
 
-            <div class="skills">
+            <div class="section-content">
 
-                <div class="skill">
-                    <div class="skill-number">01</div>
+                <h2>
+                    Opettelen
+                    <span>rakentamalla.</span>
+                </h2>
+
+                <p>
+                    En halua opetella ohjelmointia vain katsomalla
+                    tutoriaaleja. Rakennan projekteja, rikon niitä,
+                    korjaan niitä ja opin samalla.
+                </p>
+
+                <p>
+                    Tällä hetkellä keskityn erityisesti Pythoniin,
+                    web-kehitykseen ja siihen, miten ideoista tehdään
+                    toimivia tuotteita.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section id="skills" class="section">
+
+            <div class="section-label">
+                02 / OSAAMINEN
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+
+                    <div class="skill-number">
+                        01
+                    </div>
+
                     <h3>Python</h3>
-                    <p>
-                        Ohjelmointi, automaatio ja backend-kehitys.
-                    </p>
-                </div>
 
-                <div class="skill">
-                    <div class="skill-number">02</div>
+                    <p>
+                        Ohjelmoinnin perusteet, automaatio,
+                        datan käsittely ja backend-kehitys.
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <div class="skill-number">
+                        02
+                    </div>
+
                     <h3>Web</h3>
-                    <p>
-                        HTML, CSS, JavaScript ja verkkosovellukset.
-                    </p>
-                </div>
 
-                <div class="skill">
-                    <div class="skill-number">03</div>
-                    <h3>Projektit</h3>
                     <p>
-                        Ideasta toimivaksi ohjelmaksi ja julkaisuun.
+                        HTML, CSS, JavaScript ja
+                        responsiivisten verkkosivujen rakentaminen.
                     </p>
-                </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <div class="skill-number">
+                        03
+                    </div>
+
+                    <h3>Git</h3>
+
+                    <p>
+                        Versionhallinta, GitHub ja projektien
+                        julkaiseminen verkkoon.
+                    </p>
+
+                </article>
 
             </div>
 
         </section>
 
 
-        <section id="projektit" class="section">
+        <!-- PROJECTS -->
 
-            <p class="eyebrow">PROJEKTIT</p>
+        <section id="projects" class="section projects-section">
 
-            <h2>Mitä olen rakentanut?</h2>
+            <div class="section-label">
+                03 / PROJEKTIT
+            </div>
 
-            <div class="projects">
+            <div class="projects-heading">
 
-                <article class="project-card">
-                    <p class="project-number">01</p>
+                <h2>
+                    Rakennettuja
+                    <span>projekteja.</span>
+                </h2>
 
-                    <h3>Ensimmäinen verkkosivu</h3>
+                <p>
+                    Pieniä projekteja, joiden kautta opettelen
+                    uusia teknologioita ja ongelmanratkaisua.
+                </p>
 
-                    <p>
-                        Tämä sivu on ensimmäinen web-kehitysprojektini.
-                    </p>
+            </div>
 
-                    <a href="#">
-                        Tutustu →
-                    </a>
+
+            <div class="projects-grid">
+
+                <article class="project featured">
+
+                    <div class="project-top">
+                        <span>01</span>
+                        <span>WEB</span>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Portfolio</h3>
+
+                        <p>
+                            Ensimmäinen oma verkkosivu,
+                            rakennettu HTML:llä ja CSS:llä.
+                        </p>
+
+                    </div>
+
+                    <div class="project-link">
+                        Tutustu projektiin →
+                    </div>
+
                 </article>
 
 
-                <article class="project-card">
-                    <p class="project-number">02</p>
+                <article class="project">
 
-                    <h3>Python-projekti</h3>
+                    <div class="project-top">
+                        <span>02</span>
+                        <span>PYTHON</span>
+                    </div>
 
-                    <p>
-                        Pythonilla rakennettu oma ohjelmointiprojekti.
-                    </p>
+                    <div class="project-content">
 
-                    <a href="#">
-                        Tutustu →
-                    </a>
-                </article>
+                        <h3>Python-projekti</h3>
 
+                        <p>
+                            Pythonilla rakennettu ohjelma,
+                            joka ratkaisee oikean ongelman.
+                        </p>
 
-                <article class="project-card">
-                    <p class="project-number">03</p>
+                    </div>
 
-                    <h3>Seuraava projekti</h3>
-
-                    <p>
-                        Seuraava idea odottaa vielä rakentamista.
-                    </p>
-
-                    <a href="#">
+                    <div class="project-link">
                         Tulossa →
-                    </a>
+                    </div>
+
+                </article>
+
+
+                <article class="project">
+
+                    <div class="project-top">
+                        <span>03</span>
+                        <span>IDEA</span>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Seuraava idea</h3>
+
+                        <p>
+                            Seuraava projekti syntyy,
+                            kun löytyy kiinnostava ongelma.
+                        </p>
+
+                    </div>
+
+                    <div class="project-link">
+                        Tulossa →
+                    </div>
+
                 </article>
 
             </div>
@@ -150,25 +300,48 @@
         </section>
 
 
-        <section id="tietoa" class="about">
+        <!-- CONTACT -->
 
-            <p class="eyebrow">TIETOA</p>
+        <section id="contact" class="contact">
 
-            <h2>Rakennan oppimalla.</h2>
+            <div class="contact-inner">
 
-            <p>
-                Tämän sivuston tarkoitus on dokumentoida matkaa
-                Pythonista web-kehitykseen ja omien projektien
-                rakentamiseen.
-            </p>
+                <div class="section-label">
+                    04 / YHTEYS
+                </div>
+
+                <h2>
+                    Rakennetaan
+                    <span>jotain.</span>
+                </h2>
+
+                <p>
+                    Tämä sivu on vasta alku.
+                </p>
+
+                <a href="mailto:example@email.com" class="contact-button">
+                    Lähetä sähköpostia →
+                </a>
+
+            </div>
 
         </section>
 
     </main>
 
 
+    <!-- FOOTER -->
+
     <footer>
-        <p>© 2026 Ossi</p>
+
+        <div>
+            © 2026 Ossi
+        </div>
+
+        <div>
+            Built with HTML, CSS & JavaScript.
+        </div>
+
     </footer>
 
 
