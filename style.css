@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 40px 20px;
+
+    line-height: 1.6;
+
+    color: #222;
+
+    background-color: #f7f7f7;
+}
+
+
+/* Navigaatio */
+
+nav {
+    display: flex;
+
+    gap: 25px;
+
+    margin-bottom: 70px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #222;
+
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Etusivu */
+
+.hero {
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+
+    margin-top: 70px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+
+/* Nappi */
+
+button {
+    padding: 12px 20px;
+
+    margin-top: 15px;
+
+    font-size: 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #222;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Projektikortit */
+
+.projects {
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    flex: 1;
+}
+
+
+/* Alatunniste */
+
+footer {
+    margin-top: 100px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #ddd;
+
+    color: #777;
+}
+
+
+/* Puhelimet */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    nav {
+        margin-bottom: 50px;
+
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
