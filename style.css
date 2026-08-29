@@ -1,163 +1,254 @@
-body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 80px auto;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-button {
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-nav {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 60px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-body {
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    line-height: 1.6;
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, sans-serif;
-
-    max-width: 900px;
-
-    margin: 0 auto;
-
-    padding: 40px 20px;
-
+    background: #f5f5f5;
+    color: #111;
     line-height: 1.6;
+}
 
-    color: #222;
-
-    background-color: #f7f7f7;
+a {
+    color: inherit;
 }
 
 
-/* Navigaatio */
+/* NAVIGAATIO */
 
-nav {
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 25px;
+
     display: flex;
-
-    gap: 25px;
-
-    margin-bottom: 70px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
+.logo {
+    font-size: 20px;
+    font-weight: 800;
     text-decoration: none;
-
-    color: #222;
-
-    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    opacity: 0.5;
 }
 
 
-/* Etusivu */
+/* HERO */
 
 .hero {
-    margin-bottom: 100px;
+    max-width: 1100px;
+    min-height: 650px;
+
+    margin: auto;
+    padding: 100px 25px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    opacity: 0.5;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: clamp(50px, 8vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+    margin-bottom: 35px;
+}
 
-    line-height: 1.1;
+h1 span {
+    display: block;
+    opacity: 0.35;
+}
 
-    margin-bottom: 20px;
+.hero-text {
+    max-width: 550px;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+
+/* NAPIT */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.button.primary {
+    background: #111;
+    color: white;
+}
+
+.button.secondary {
+    border: 1px solid #ccc;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* SECTIONS */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 120px 25px;
 }
 
 h2 {
-    font-size: 32px;
-
-    margin-top: 70px;
-}
-
-h3 {
-    margin-top: 0;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 50px;
 }
 
 
-/* Nappi */
+/* OSAAMINEN */
 
-button {
-    padding: 12px 20px;
-
-    margin-top: 15px;
-
-    font-size: 16px;
-
-    border: none;
-
-    border-radius: 8px;
-
-    background-color: #222;
-
-    color: white;
-
-    cursor: pointer;
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-button:hover {
-    opacity: 0.8;
+.skill {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.skill-number {
+    font-size: 13px;
+    opacity: 0.4;
+    margin-bottom: 50px;
+}
+
+.skill h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    color: #666;
 }
 
 
-/* Projektikortit */
+/* PROJEKTIT */
 
 .projects {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
 
+.project-card {
+    min-height: 350px;
+
+    padding: 35px;
+
+    background: #111;
+    color: white;
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-number {
+    opacity: 0.5;
+    margin-bottom: auto;
+}
+
+.project-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #aaa;
+}
+
+.project-card a {
     margin-top: 30px;
-}
-
-.card {
-    background-color: white;
-
-    border: 1px solid #ddd;
-
-    padding: 25px;
-
-    border-radius: 12px;
-
-    flex: 1;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
-/* Alatunniste */
+/* TIETOA */
+
+.about {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 120px 25px;
+
+    border-top: 1px solid #ddd;
+}
+
+.about h2 {
+    max-width: 700px;
+}
+
+.about > p:last-child {
+    max-width: 600px;
+    font-size: 20px;
+    color: #666;
+}
+
+
+/* FOOTER */
 
 footer {
-    margin-top: 100px;
+    max-width: 1100px;
+    margin: auto;
 
-    padding-top: 30px;
+    padding: 40px 25px;
 
     border-top: 1px solid #ddd;
 
@@ -165,29 +256,50 @@ footer {
 }
 
 
-/* Puhelimet */
+/* PUHELIN */
 
 @media (max-width: 700px) {
 
-    body {
-        padding: 25px 15px;
+    .navbar {
+        padding: 25px 20px;
     }
 
-    nav {
-        margin-bottom: 50px;
-
+    .nav-links {
         gap: 15px;
     }
 
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 70px 20px;
+    }
+
     h1 {
-        font-size: 36px;
+        font-size: 55px;
+        letter-spacing: -3px;
     }
 
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .section {
+        padding: 80px 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .skills,
     .projects {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
-    .card {
-        width: 100%;
+    .about {
+        padding: 80px 20px;
     }
 }

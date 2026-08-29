@@ -1,3 +1,1 @@
-function tervehdi() {
-    alert("Hei! JavaScript toimii.");
-}
+console.log("Sivu toimii!");
